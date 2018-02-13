@@ -4,7 +4,7 @@ class PictureUploader < CarrierWave::Uploader::Base
 
   storage :file
 
-   # process resize_to_fit: [400, 600]
+  process resize_to_fit: [400, 600]
   
   
   def store_dir
