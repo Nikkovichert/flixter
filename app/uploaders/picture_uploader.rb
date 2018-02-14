@@ -2,7 +2,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   
   include CarrierWave::MiniMagick
 
-  storage :file
+  storage :aws
 
   process resize_to_fit: [400, 600]
   
